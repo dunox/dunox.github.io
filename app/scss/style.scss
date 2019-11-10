@@ -31,14 +31,10 @@
 	font-family: Intro Regular;
     src: url('../fonts/Intro-Regular.otf');
 }
-// body{
-//     background-image: url("../images/bedroom.png");
-//     height: 100vh;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     text-transform: uppercase;
-// }
+body{
+    position: relative;
+    text-transform: uppercase;
+}
 a{
     display: inline-block;
     text-decoration: none;
@@ -139,6 +135,8 @@ a{
     z-index: 2;
 }
 .slider__item-info{
+    max-width: 1521px;
+    margin: auto;
     z-index: 5;
     height: 100vh;
     position: relative;
