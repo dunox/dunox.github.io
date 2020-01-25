@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img/jungle.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+.header{
+    background-color: rgba(0, 0, 0, .4);
+}
+.header__nav{
+    background-color: rgba(0, 0, 0, .4);
+    padding: .67em 0;
+}
+.header ul{
+    display: inline-block;
+    list-style: none;
+    vertical-align: bottom;
+}
+.header li{
+    float: left;
+    margin: 0 60px;
+    font-size: 24px;
+}
+.header__title{
+    margin-bottom: 20px;
+}
+h1{
+    padding: 15px 0;
+    font-size: 50px;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+.animals{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.animal-image{
+    position: relative;
+    width: 300px;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.cage{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.key{
+    z-index: 5;
+    position: absolute;
+    width: 34%;
+    top: 124px;
+    transform: rotate3d(11, 20, -16, -68deg);
+    right: 40px;
+}
+.saved{
+    animation-name: cage-open;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes cage-open{
+    from {
+        transform: translateX(0px);
+      }
+      to {
+        transform: translateX(-300px);
+      }
+}
+.animals-type{
+    position: absolute;
+    /* top: 10%; */
+    bottom: 8%;
+    left: 14%;
+    max-height: 74%;
+    max-width: 70%;
+}
+input{
+    border: 3px solid green;
+    border-radius: 10px;
+    height: 25px;
+    text-indent: 10px;
+    padding: 0px 3px;
+    outline: none;
+}
+.green{
+    background-color: yellowgreen;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+button{
+    padding: 1px 6px;
+    border: 3px solid green;
+    border-radius: 10px;
+    height: 31px;
+    margin-bottom: 30px;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}

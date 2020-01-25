@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoo</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header__nav">
+            <ul>
+                <li>Home</li>
+                <li>Forest</li>
+                <li>Jungle</li>
+                <li>Desert</li>
+                <li>Safari</li>
+            </ul>
+        </div>
+        <div class="header__title">
+            <h1>Can you save all animals?</h1>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/lion.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="lion" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button class="check-name" id="check-name" onclick="checkLion()">Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/giraffe.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                    <img src="img/key.png" alt="" class="key">
+                </div>
+                <input id="giraffe" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button class="check-name" >Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/elephant.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="elephant" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button class="check-name">Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/monkey.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="monkey" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button id="check-name">Проверить</button>
+            </div>
+        </section>
+        <section>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/zebra.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="zebra" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button id="check-name">Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/hippo.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="hippo" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button id="check-name">Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <!-- <img src="img/owl.png" alt="" class="animals-type"> -->
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input class="animal-type__name" type="text" placeholder="What is my name?">
+                <button id="check-name">Проверить</button>
+            </div>
+            <div class="animal">
+                <div class="animal-image">
+                    <img src="img/rhino.png" alt="" class="animals-type">
+                    <img src="img/cage.png" alt="" class="cage" id="cage">
+                </div>
+                <input id="rhino" class="animal-type__name" type="text" placeholder="What is my name?">
+                <button id="check-name">Проверить</button>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
