@@ -1,0 +1,14 @@
+.Weekday {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.Month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 784px;
+}
+.Item {
+   margin-top: 26px;
+   margin-bottom: -6px;
+   margin-left: 10px;
+ }
