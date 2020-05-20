@@ -3,18 +3,16 @@ import classes from './Day.module.scss';
 import clock from './../../images/clock.png';
 const Day = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    // state = {
-    //     isOpen: false,
-    // };
     const descriptionHandler = () => {
         setIsOpen(!isOpen);
     }
-    // render() {
         const {course} = props;
     const dateNow = course.event.length > 0 ? <h3>Уроки на {course.date} мая</h3> : <h3>На сегодня уроков не запланировано</h3>;
         const dayDescription = isOpen && <div className={classes.Detail}>
+            {isOpen && <div className={classes.Layout}></div>}
+            <button onClick={descriptionHandler}> </button>
             {dateNow}
-            {course.event.map(({ title, name, time, duration}) => {
+             {course.event.map(({ title, name, time, duration}) => {
                 return (
                         <div className={classes.Event}>
                             <span className={classes.Time}>{time}</span>
@@ -37,8 +35,6 @@ const Day = (props) => {
             </React.Fragment>
 
         )
-
-    // }
 
 }
 export default Day;
