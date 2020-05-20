@@ -28,23 +28,6 @@
     background-color: #fafafa;
     box-shadow: 2px 2px 23px 2px #e8e8e8;
     border-bottom-right-radius: 10px;
-  .Layout {
-    position: absolute;
-    width: 784px;
-    height: 481px;
-    top: -477px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  button{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-  }
   h3{
     border-top: 2px solid #ed1c24;
     padding-left: 9px;
@@ -53,13 +36,6 @@
     font-weight: 600;
     line-height: 40px;
     margin-top: 2px;
-    position: relative;
-    &:after {
-      content: "X";
-      position: absolute;
-      color: #e41e26;
-      right: 15px;
-    }
   }
    .Event {
      max-height: 31.5px;
